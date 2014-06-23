@@ -1,0 +1,5 @@
+June 23:
+
+Goals
+1: Write a bare bones version of taskmap with tests. This should quickly run into the problems that SQL's solve.
+2: Learn enough SQL to solve these problems
