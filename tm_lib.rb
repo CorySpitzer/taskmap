@@ -33,4 +33,12 @@ class Node
     end
     
     # Relationship removers:
+    def disconnect(node)
+        # remove the connection, if it exists with a given node
+        # if self in node.children or node.parents
+            # remove self and 
+            # remove node from self.children or self.parents
+    end
+    
+    
 end 
