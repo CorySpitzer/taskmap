@@ -12,9 +12,13 @@
     # disconnect
 
 from tm_lib import Node
+import sqlite3 as sql3
 
 def main():
-    test_node = Node('yo', 'do somthing!', [],[])
+    # Create or reopen the task history DB:
+    task_db = sql3.connect('data/task.db')
+    
+    test_node = Node('yo', 'do something!', [],[])
     
     print test_node.kids
     print test_node.parents
@@ -50,7 +54,15 @@ def main():
                 print "Try a different command:"
                 print help_string
             
-            
+def to_study():
+    ''' Return a node/task that has not been studied recently
+        Interacts with study time DB
+    '''
+    # return random node in not_studied_recently
+    pass
+    
+
+
 
 ## Content, leads_to
 #t1 = ['content', [t2, t3]]

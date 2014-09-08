@@ -23,4 +23,25 @@ class Node:
         '''
         return self.parents
         
+class Task_db:
+    ''' A sqlite3 database of the tasks a given student has done
+    '''
+    def __init__(self):
+        '''
+        '''
+        pass
+        
+    
+
+class User:
+    ''' A User or student class to allow for multiple people 
+        to use the software
+    '''
+    def __init__(self):
+        '''
+        '''
+        pass
+
+
+
 #test = Node('yo', 'do somthing!', [])
