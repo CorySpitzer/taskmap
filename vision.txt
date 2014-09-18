@@ -1,0 +1,8 @@
+A document for ideas anbout TM
+
+Every node has a various tags/themes like 'loops' or 'recursion.'
+The idea is to practice these tags spaced out and interspersed 
+repeatedly so we want to have incresingly challanging nodes that 
+then touch on these recuring themes.
+
+
