@@ -13,6 +13,7 @@
 
 from tm_lib import Node
 import sqlite3 as sql3
+import os
 
 def main():
     # Create or reopen the task history DB:
@@ -46,6 +47,9 @@ def main():
         elif command.lower()[0] == 'm':
             print 'The whole map...'
             # prints, by level the nodes between the two given
+        elif command.lower()[0] == 'z':
+            print 'using the clear command...'
+            os.system('clear')
         else:
             try:
                 # See if the entered command makes sense as an integer
