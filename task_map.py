@@ -13,9 +13,44 @@
 
 from tm_lib import Node
 import sqlite3 as sql3
-import os
+import os, sys
+
+def get_args():
+    # get command line args to determine mode
+    if len(sys.argv) > 1:
+        arg1 = sys.argv[1].lower()
+        if arg1 == '-e':
+            return 'Edit'
+        elif arg1 == '-x':
+            return 'eXplore'
+        elif arg1 == '-h':
+            return 'help!'
+            
+    else:
+        return 'None'
+
+def tm_edit():
+    print 'mode is edit'
+    pass
+    
+def tm_explore():
+    print 'mode is explore'
+    pass
 
 def main():
+    mode = get_args()
+    #print mode
+    if mode == 'Edit':
+        tm_edit()
+    elif mode == 'eXplore':
+        tm_explore()
+    #elif mode == 'help!':
+        #print help_message
+        #sys.exit        
+    else:
+        print 'passing...'
+        pass
+    
     # Create or reopen the task history DB:
     task_db = sql3.connect('data/task.db')
     
