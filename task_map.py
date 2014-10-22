@@ -38,15 +38,16 @@ def tm_explore():
     pass
 
 def main():
+    help_message = 'Command Line Options: -e to edit, -x to explore.'
     mode = get_args()
     #print mode
     if mode == 'Edit':
         tm_edit()
     elif mode == 'eXplore':
         tm_explore()
-    #elif mode == 'help!':
-        #print help_message
-        #sys.exit        
+    elif mode == 'help!':
+        print help_message
+        sys.exit()     
     else:
         print 'passing...'
         pass
