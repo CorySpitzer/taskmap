@@ -10,7 +10,6 @@ Two modes with interactive prompts, create and explore:
 
 API:
     Class Map
-        .new(name)
         .save(name=current_map)
         .open(path)
         .get_path(name=current_map)
