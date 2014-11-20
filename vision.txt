@@ -6,3 +6,51 @@ repeatedly so we want to have incresingly challanging nodes that
 then touch on these recuring themes.
 
 
+Two modes with interactive prompts, create and explore:
+
+API:
+    Class Map
+        .new(name)
+        .save(name=current_map)
+        .open(path)
+        .get_path(name=current_map)
+        .add_node(name)
+        .current_node
+        .go_to_node(node)
+            # switch current node to name
+        
+        Class Node
+            .completed?
+            .content 
+                # A string of info, possibly from a file
+            .connect(node, directionality) # as_parent, as_child, as_friend
+            .connected_to?(node)
+            .connections?()
+            .str()
+                # Return str with name and connections
+            .parents()
+                # return a list of all the parent nodes
+            .children()
+                # return a list of all children of a node
+            .friends()
+                # return a list of all related nodes 
+                # that are neither children nor parents
+Create:
+            
+    >>> Map.new(test_map)
+    'test_map created'
+    >>> test_map.add_node(node1)
+    'node1 created'
+    >>> node1.content = 'Write hello world in Python.'
+    >>> test_map.add_node(node2)
+    'node2 created'
+    >>> node1.connect(node2, as_parent)
+    'node1 now leads to node2'
+    >>> print str(node1)
+    "Node1: not finished, leads to node2, contains 'Write hello world...'"
+
+Explore:
+    
+    
+    
+
