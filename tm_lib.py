@@ -1,6 +1,39 @@
-# tm_lib.py
+    # tm_lib.py
 # Class definitions
 
+class Map:
+    
+    def __init__(self)
+        '''
+        '''
+        self.current_node = Node.new # a default starting node
+        pass
+    
+    def save(name=current_map)
+        '''
+        '''
+        pass
+        
+    def open_map(path)
+        '''
+        '''
+        pass
+        
+    def get_path(name=current_map)
+        '''
+        '''
+        pass
+        
+    def add_node(name)
+        '''
+        '''
+        pass
+    
+    def go_to_node(node)
+        ''' # switch current node to name
+        '''
+        pass
+            
 
 class Node:
     
